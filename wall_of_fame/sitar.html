@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  
+<style>
+@font-face
+{
+font-family:"Product Sans";
+src:url("../res/fonts/Product Sans Regular.ttf"),url("../res/fonts/Product Sans Italic.ttf"),url("../res/fonts/Product Sans Bold.ttf");
+}
+
+*{
+ 
+  font-weight:400;
+  margin: 0;
+  padding: 0;
+  color:;
+  font-family:"Open Sans","Merriweather", "montserrat",sans-serif;
+}
+body
+{
+background:#f6f6f6;
+}
+
+.header{
+top:0;
+width:100%;
+position:fixed;
+  height: 100px;
+  background: #003366;
+  padding: 0 20px;
+  color: #fff;
+  box-shadow:2px 1px #000;
+}
+.logo{
+letter-spacing:;
+  font-size:30px;
+  font-family:"Product Sans";
+  line-height: 100px;
+  float: left;
+}
+.ham
+{
+cursor:pointer;
+position:relative;
+top:50%;
+transform:translateY(-50%);
+float:left;
+margin-right:20px;
+transition:0.6s;
+}
+.ham:hover
+{
+content:url(../res/icons/menuh.png);
+}
+i
+{
+margin-right:40px;
+}
+.menu{
+  float: right;
+  line-height: 100px;
+  text-transform:uppercase;
+}
+.menu a{
+  display:inline-block;
+  font-family:"Open Sans";
+  color: #fff;
+  margin-right:25px;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.menu a:nth-child(5){
+margin-right:50px;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #3498db;
+}
+.menu a:hover
+{
+ background:#3498db;
+  color: #fff;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+}
+.g1i
+{
+background:url(s1.jpg) no-repeat center;
+background-size:cover;
+top:100px;
+background-attachment:fixed;
+margin-top:125px;
+width:100%;
+height:80vh;
+}
+.g2i
+{
+background:url(s2.jpg) no-repeat center;
+background-size:cover;
+top:100px;
+background-attachment:fixed;
+margin-top:125px;
+width:100%;
+height:80vh;
+}
+.g3i
+{
+background:url(s3.jpg) no-repeat center;
+background-size:cover;
+top:100px;
+background-attachment:fixed;
+margin-top:125px;
+width:100%;
+height:80vh;
+}
+.g4i
+{
+background:url(s4.jpg) no-repeat center;
+background-size:cover;
+top:100px;
+background-attachment:fixed;
+margin-top:125px;
+width:100%;
+height:80vh;
+}
+.g5i
+{
+background:url(s5.jpg) no-repeat center;
+background-size:cover;
+top:100px;
+background-attachment:fixed;
+margin-top:125px;
+width:100%;
+height:80vh;
+}
+.g6i
+{
+background:url(s6.jpg) no-repeat center;
+background-size:cover;
+top:100px;
+background-attachment:fixed;
+margin-top:125px;
+width:100%;
+height:80vh;
+}
+.g1c , .g2c , .g3c , .g4c , .g5c , .g6c
+{
+display:table;
+font-size:20px;
+padding:5vh;
+margin-top:5vh;
+padding-bottom:5vh;
+}
+
+.cc
+{
+display:inline-block;
+transform:uppercase;
+font-family:"Algerian";
+font-size:40px;
+}
+.shop
+{
+font-weight:450;
+position:relative;
+width:275px;
+height:55px;
+display:inline-block;
+top:50px;
+position:relative;
+text-decoration:none;
+color:blue;
+font-family: 'Raleway', sans-serif;
+font-size:30px;
+text-align:center;
+padding:5px;
+border-radius:10px;
+border:1px solid blue;
+line-height:20px;
+}
+.shop img
+{
+position:relative;
+margin-left:10px;
+top:5px;
+}
+.btn-text
+{
+display:inline-block;
+font-family: 'Raleway', sans-serif;
+margin-top:17.5px;
+}
+.shop:hover .right
+{
+animation:anim 0.6s linear;
+}
+@keyframes anim
+{
+0%{margin-left:10px}
+50%{margin-left:30px}
+100%{margin-left:10px}
+}
+</style>
+</head>
+  <body>
+  <div class="header">
+	<img src="../res/icons/menu.png" class="ham">
+    <h2 class="logo">MiPro</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="..\main\home.html">Home</a>
+      <a href="..\main\login.html">Login</a>
+      <a href="..\main\home.html">Products</a>
+      <a href="..\main\home.html">Landing Page</a>
+      <a href="#">Contact Us</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+<div class="g">
+<div class="g1i"></div>
+<div class="g1c" align="center">
+<div class="cc">"G</div>uitar is a fretted musical instrument that usually has six strings. It is typically played with both hands by strumming or plucking the strings with either a guitar pick or the finger(s) / fingernails of one hand, while simultaneously fretting (pressing the strings against the frets) with the fingers of the other hand. The sound of the vibrating strings is projected either acoustically, by means of the hollow chamber of the guitar (for an acoustic guitar), or through an electrical amplifier and a speaker.<div style="font-family:Algerian;display:inline-block;">"</div>
+</div>
+</div>
+<div class="g">
+<div class="g2i"></div>
+<div class="g2c" align="center">
+<div class="cc">"U</div>sually, I'll just sit down at the piano or with a guitar, and I will be just relaxed playing the music. Because that's what relaxes your subconsicious. That's why everyone from animals to humans love music.<div style="font-family:Algerian;display:inline-block;">"</div>
+</div>
+</div>
+<div class="g">
+<div class="g3i"></div>
+<div class="g3c" align="center">
+<div class="cc">"I</div>'ve never mastered the guitar. Either, I was playing it, or it was playing me; It depends on how you look at it. As a kid the only things I had to do was go to school do my homework, and play guitar.<div style="font-family:Algerian;display:inline-block;">"</div>
+</div>
+</div>
+<div class="g">
+<div class="g4i"></div>
+<div class="g4c" align="center">
+<div class="cc">"T</div>uitar is a fretted musical instrument that usually has six strings. It is typically played with both hands by strumming or plucking the strings with either a guitar pick or the finger(s) / fingernails of one hand, while simultaneously fretting (pressing the strings against the frets) with the fingers of the other hand. The sound of the vibrating strings is projected either acoustically, by means of the hollow chamber of the guitar (for an acoustic guitar), or through an electrical amplifier and a speaker.<div style="font-family:Algerian;display:inline-block;">"</div>
+</div>
+</div>
+<div class="g">
+<div class="g5i"></div>
+<div class="g5c" align="center">
+<div class="cc">"A</div> guitar is a very personal extension of the person playing it. You have to be emotionally and personally connected to your instrument. I'm very brutal to my instruments but not always.<div style="font-family:Algerian;display:inline-block;">"</div>
+</div>
+</div>
+<div class="g">
+<div class="g6i"></div>
+<div class="g6c" align="center">
+<div class="cc">"R</div>enaissance and Baroque guitars are the ancestors of the modern classical and flamenco guitar. They are substantially smaller, more delicate in construction, and generate less volume. The strings are paired in courses as in a modern 12-string guitar, but they only have four or five courses of strings rather than six single strings normally used now. <div style="font-family:Algerian;display:inline-block;">"</div>
+<a href="#" class="shop"><div class="btn-text">SHOP NOW</div><img src="../res/icons/bb.png" class="right" height="30px" width="30px"></a>
+</div>
+</div>
+<br>
+<br>
+<br>
+.
+</body>
+</html>

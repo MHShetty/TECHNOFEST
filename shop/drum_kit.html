@@ -1,0 +1,2669 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LANDING PAGE</title>
+        <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+<style>
+html
+{
+  scroll-behavior: smooth;
+}
+@font-face
+{
+font-family:"Product Sans Bold Italic";
+src:url("../res/fonts/Product Sans Bold Italic.ttf");
+}
+@font-face
+{
+font-family:"Product Sans Bold";
+src:url("../res/fonts/Product Sans Bold.ttf");
+}
+@font-face
+{
+font-family:"Product Sans Italic";
+src:url("../res/fonts/Product Sans Bold Italic.ttf");
+}
+@font-face
+{
+font-family:"Product Sans";
+src:url("../res/fonts/Product Sans Regular.ttf");
+}
+
+*{
+ 
+  font-weight:400;
+  margin: 0;
+  padding: 0;
+  color:;
+  font-family:"Open Sans","Merriweather", "montserrat",sans-serif;
+}
+body
+{
+width:100%;
+background:#f6f6f6;
+}
+
+.header{
+box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+transition: 0.7s ease-out;
+transition-delay: 1s;
+overflow: hidden;
+z-index:100;
+top:0;
+width:100%;
+position:fixed;
+  height: 100px;
+  background: #003366;
+  padding: 0 20px;
+  color: #fff;
+  box-shadow:2px 1px #000;
+  margin-top: 0;
+}
+
+
+.logo{
+  font-size:30px;
+  font-family:"Product Sans";
+  line-height: 100px;
+  float: left;
+}
+.ham
+{
+visibility:visible;
+cursor:pointer;
+position:relative;
+top:50%;
+transform:translateY(-50%);
+float:left;
+margin-right:20px;
+transition:0.7s;
+
+}
+.hamy
+{
+z-index:1999;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+.ham:hover +.slider-menu
+{
+margin-left:0;
+}
+-webkit-.ham:active .slider-menu
+{
+margin-left:0;
+}
+i
+{
+margin-right:40px;
+}
+.menu{
+  float: right;
+  line-height: 100px;
+  text-transform:uppercase;
+}
+.menu a{
+  display:inline-block;
+  font-family:"Open Sans";
+  color: #fff;
+  margin-right:25px;
+  text-decoration: none;
+  padding: 0 20px;
+  transition: 0.4s;
+}
+.menu a:nth-child(4){
+margin-right:50px;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #3498db;
+}
+.menu a:hover
+{
+ background:#3498db;
+  color: #fff;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+.product-details
+{
+flex-direction:column;
+}
+}
+.content
+{
+width:;
+height:100vh;
+margin:125px;
+display:flex;
+flex-direction:row;
+position:relative;
+top:90vh;
+justify-content:center;
+border:1px solid #000;
+}
+
+body
+{
+color:black;
+padding:0;
+margin:0;
+background:#f6f6f6;
+font-family:'Roboto','Bitter',"Staatliches", "Open Sans";
+font-weight:600;
+}
+.middle
+{
+
+z-index:-11111;
+height:100%;
+width:100%;
+}
+.slideshow
+{
+background:black;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+margin:auto;
+width:100vw;
+height:90vh;
+overflow:hidden;
+transition:0.6s;
+}
+.slideshow:hover div.hello 
+{
+opacity:1;
+z-index:2;
+}
+.navigation:hover div.hello 
+{
+opacity:0;
+z-index:2;
+}
+
+.slides:hover
+{
+background:rgba(0,0,0,0.7);
+opacity:0.2;
+border:1px solid white;
+}
+
+.navigation
+{
+position:absolute;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+}
+.bar
+{
+width:15px;
+height:15px;
+border-radius:50%;
+border:2px solid #fff;
+margin:15px;
+transition:0.3s;
+
+}
+.bar:hover 
+{
+background-color:white;
+cursor:pointer;
+}
+
+input[name="r"]
+{
+position:absolute;
+visibility:hidden;
+}
+.slides
+{
+width:500%;
+height:100%;
+display:flex;
+transition:0.6s;
+}
+.slide
+{
+width:20%;
+transition:0.6s;
+}
+.s1
+{
+width:20%;
+transition:0.6s;
+}
+.slides img
+{
+transition:0.3s;
+width:100%;
+height:100%;
+}
+@keyframes sss
+{
+10%,12%{margin-left:0%;}
+26%,28%{margin-left:-20%;}
+42%,44%{margin-left:-40%;}
+58%,60%{margin-left:-60%;}
+74%,76%{margin-left:-80%;}
+88%,92%{margin-left:0%;}
+}
+@keyframes ss1
+{
+0%{margin-left:0%;}
+100%{margin-left:-20%;}
+}
+
+@keyframes ss2
+{
+0%{margin-left:-20%;}
+100%{margin-left:-40%;}
+}
+@keyframes ss3
+{
+0%{margin-left:-40%;}
+100%{margin-left:-60%;}
+}
+@keyframes ss4
+{
+0%{margin-left:-60%;}
+100%{margin-left:-80%;}
+}
+@keyframes ss5
+{
+0%{margin-left:-80%;}
+100%{margin-left:0%;}
+}
+#r1:checked ~.s1{
+margin-left:0;
+}
+
+#r2:checked~.s1
+{
+margin-left:-20%;
+}
+
+#r3:checked ~.s1{
+margin-left:-40%;
+}
+
+#r4:checked~.s1
+{
+margin-left:-60%;
+}
+
+#r5:checked ~.s1{
+margin-left:-80%;
+}
+
+.back
+{
+position:relative;
+padding:5px 100px;
+height:100%;
+width:100%;
+font-weight:bold;
+font-size:27.1px;
+transition:0.6s;
+}
+
+.hello
+{
+display:flex;
+align-items: center;
+justify-content:center;
+opacity:0;
+}
+
+.w-message
+{
+text-align: center;
+color:white;
+display:table;
+font-size: 40px;
+position:absolute;
+left:50%;
+top:45%;
+transform:translate(-50%,-50%);
+}
+a.d1
+{
+cursor:pointer;
+padding:10px 20px;
+border-radius:5px;
+color:lime;
+border:1px solid lime;
+font-size:25px;
+background:none;
+text-decoration:none;
+position:absolute;
+left:50%;
+top:62%;
+transform:translate(-50%,-50%);
+z-index:2;
+}
+@keyframes anim
+{
+0%{margin-left:0;}
+50%
+{margin-left:5px;}
+100%
+{margin-left:0;}
+}
+a.d1:hover .arrow
+{
+animation:anim 0.4s linear;
+}
+
+a.d1:hover .slides
+{
+opacity:0.2;
+}
+.navbar
+{
+color:;
+z-index:3;
+}
+.rest
+{
+color:black;
+letter-spacing:0px;
+}
+.role
+{
+display:block;
+font-size:20px;
+}
+.qr
+{
+border:1px solid #000;
+margin-top:10px;
+height:28px;
+}
+#sc
+{
+position:relative;
+animation:scrollm 1s linear 5;
+}
+@keyframes scrollm
+{
+20%{top:25%;
+transform:translateY(-25%);}
+40%{top:50%;
+transform:translateY(-50%);}
+60%{top:75%;
+transform:translateY(-75%);}
+80%{top:100%;
+transform:translateY(-100%);}
+100%{top:125%;
+transform:translateY(-125%);}
+}
+#container{
+width:100%;
+display:inline-block;
+overflow:hidden;
+text-align:center;
+    height:144px;
+}
+.whoiam{
+    -webkit-animation: move;
+            animation: move;
+    position:relative;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: step-start;
+            animation-timing-function: step-start;
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+h2{ height:144px;margin:0;padding:0}
+@keyframes move {
+    0% { margin-top: 0em; }
+    20% { margin-top: -144px; }
+    40% {margin-top: -288px;}
+    60% {margin-top: -432px; }
+    80% {margin-top: -576px;}
+    100%{margin-top: 0;}
+}
+
+h2{display:block;
+    -webkit-animation: fade;
+            animation: fade;
+    -webkit-animation-duration: 21s;
+            animation-duration: 21s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes fade {
+    0% { opacity: 0; filter:alpha(opacity=0); }
+    10% { opacity: 1; filter:alpha(opacity=100); }
+    100% { opacity: 1; filter:alpha(opacity=100); }
+}
+
+@keyframes fade {
+    0% { opacity: 0; filter:alpha(opacity=0); }
+    10% { opacity: 1; filter:alpha(opacity=110); }
+    100% { opacity: 1; filter:alpha(opacity=100); }
+}
+.areyouan
+{
+display:inline-grid;
+font-size:50px;
+}
+.maincontent
+{
+
+space-between:;
+width:95%;
+height:;
+margin:auto;
+margin-top:125px;
+display:flex;
+flex-direction:column;
+position:relative;
+top:90vh;
+justify-content:center;
+}
+.maincontent-box
+{
+width:;
+height:wrap;
+margin:125px;
+display:grid;
+flex-direction:row;
+position:relative;
+justify-content:center;
+}
+.main-index-child
+{
+filter:brightness(18%);
+overflow:hidden;
+color:white;
+background-color:white;
+display:flex;
+width:100%;
+margin:;
+height:350px;
+margin-top:20px;
+border:1px solid #8a795d;
+background-color:white,#003366;
+//background:url("../res/guitar/gguitar.png") center no-repeat;
+//background-size:cover;
+//background-attachment:fixed;
+align-items:center;
+justify-content:center;
+text-transform:uppercase;
+transition:1s;
+
+}
+
+.main-index-child:hover
+{
+filter:brightness(100%);
+}
+.main-index-child img:hover
+{
+transition:1s;
+}
+.main-index-child img:hover
+{
+filter:brightness(150%);
+transform:scale(1.1);
+}
+.go img:hover
+{
+filter:brightness(100%);
+transform:scale(1.1);
+}
+.po img:hover
+{
+filter:brightness(100%);
+transform:scale(1.5);
+}
+.dropdown
+{
+width:100%;
+display:inline-flex;
+justify-content:flex-end;
+align-items:flex-end;
+position:fixed;
+bottom:0;
+height:50px;
+background:rgba(0,0,0,0.7);
+}
+.dropdown img
+{
+
+display:inline-flex;
+align-items:flex-end;
+justify-content:flex-end;
+height:30px;
+width:25px;
+color:white;
+margin:5px;
+transition:0.2s;
+}
+.dropdown img:hover
+{
+transform:rotate(180deg);
+}
+.ddrop
+{
+transition:1s;
+}
+.sdl:hover #dsds
+{
+height:110px;
+}
+#dsds
+{
+height:0;
+transition:1s;
+}
+#dsds:hover
+{
+height:00px;
+transition:1s;
+}
+.sdl
+{
+cursor:pointer;
+top:600px;
+right:0;
+border:1px solid #8a795d;
+margin-right:-2px;
+margin-top:-10px;
+align-self:flex-end;
+background:#f4f2f0;
+z-index:2;
+width:150px;
+
+overflow:hidden;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+font-size:20px;
+position:absolute;
+color:black;
+margin-bottom:-50px;
+transition:1s;
+}
+.sdl li
+{
+color:black;
+overflow:hidden;
+text-decoration:none;
+padding:5px;
+position:relative;
+width:wrap;
+justify-content:flex-end;
+align-items:flex-end;
+display:flex;
+transition:0.4s;
+}
+.sdl a
+{
+text-decoration:none;
+color:black;
+}
+.iindex
+{
+flex-direction:column;
+display:flex;
+}
+.sdl li:hover
+{
+color:white;
+background:#3498db;
+}
+.unn
+{
+position:fixed;
+margin-left:-250px;
+width:100%;
+padding:7px;
+padding-left:20px;
+font-weight:500;
+font-family:"Open Sans","Merriweather";
+font-size:25px;
+justify-content:flex-start;
+align-self:flex-start;
+transition:1s;
+}
+.go:hover .unn
+{
+visibility:visible;
+margin-left:20px;
+}
+
+.so:hover .unn
+{
+visibility:visible;
+margin-left:20px;
+}
+
+.fo:hover .unn
+{
+visibility:visible;
+margin-left:20px;
+}
+
+.dk:hover .unn
+{
+visibility:visible;
+margin-left:20px;
+}
+.to:hover .unn
+{
+visibility:visible;
+margin-left:20px;
+}
+
+.po:hover .unn
+{
+visibility:visible;
+margin-left:20px;
+}
+.ty2
+{
+top:975px;
+}
+.ty3
+{
+top:1350px;
+}
+.ty4
+{
+top:1725px;
+}
+.ty5
+{
+top:2095px;
+}
+.ty6
+{
+top:2465px;
+}
+.slider-menu
+{
+overflow:hidden;
+margin-left:-50vh;
+z-index:2000;
+background:white;
+width:40vh;
+height:100vh;
+position:fixed;
+top:0;
+left:0;
+border:1px solid #8a795d;
+display:flex;
+padding:10px 20px;
+padding-top:20px;
+flex-direction:column;
+transition:0.7s;
+}
+.slider-menu:hover
+{
+margin-left:0;
+}
+.slider-menu img
+{
+
+border:1px solid #8a795d;
+flex:3;
+border-radius:50%;
+}
+.profile
+{
+padding-bottom:20px;
+border-bottom:1px solid #000;
+height:100px;
+width:95%;
+//border:1px solid pink;
+display:flex;
+flex-direction:row;
+}
+.pp
+{
+height:wrap;
+width:wrap;
+//border:1px solid pink;
+flex:2;
+}
+.pname
+{
+font-weight:bold;
+padding-left:15px;
+display:flex;
+align-items:flex-end;
+height:50%;
+width:wrap;
+//border:1px solid pink;
+}
+.pinfo
+{
+color:grey;
+padding-top:5px;
+padding-left:15px;
+align-items:flex-start;
+display:flex;
+height:50%;
+width:wrap;
+//border:1px solid pink;
+}
+.status
+{
+display:flex;
+text-align:center;
+border-bottom:1px solid #8a795d;
+padding-bottom:30px;
+}
+.lstatus,.cstatus,.nstatus
+{
+margin-top:10px;
+border-right:1px solid #8a795d;
+flex:1;
+}
+.nstatus
+{
+margin-top:10px;
+border-right:none;
+flex:1;
+}
+.cn,.ln,.nn
+{
+flex:2;
+font-weight:bold;
+font-size:40px;
+}
+.cd,.ld,.nd
+{
+flex:1;
+color:grey;
+}
+.menu-options
+{
+display:flex;
+width:100%;
+}
+.menu-options li 
+{
+cursor:pointer;
+width:100%;
+border-bottom:1px solid #8a795d;
+display:flex;
+align-items:center;
+height:50px;
+align-items:center;
+transition:1s;
+}
+.menu-options a:hover
+{
+font-weight:500;
+background-color:brown;
+color:white;
+}
+.menu-options ol
+{
+width:100%;
+display:flex;
+flex-direction:column;
+}
+.menu-options a 
+{
+
+padding-left:10px;
+height:100%;
+width:100%;
+display:flex;
+text-decoration:none;
+color:black;
+align-items:center;
+transition:0.7s;
+}
+.squote
+{
+padding-bottom:10px;
+text-align:center;
+border-bottom:1px solid #8a795d;
+}
+.d3d
+{
+padding-top:5px;
+font-size:25px;
+font-weight:bold;
+}
+.slide-window
+{
+border:1px solid black;
+position:fixed;
+top:30px;
+left:15px;
+z-index:1999;
+width:40px;
+height:40px;
+}
+.slide-window:active .slider-menu
+{
+margin:0;
+}
+.maincontent
+{
+display:flex;
+align-items:center;
+}
+.p-index
+{
+display:;
+width:100%;
+margin-bottom:0;
+}
+.p-type
+{
+margin-top:-500px;
+position:relative;
+border-radius:10px;
+margin:2%;
+overflow:hidden;
+box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+display:flex;
+flex-direction:column;
+background-color:#fbfbfb;
+margin-top:50px;
+height:wrap;
+align-items:flex-end;
+justify-content:center;
+}
+.p-img
+{
+overflow: hidden;
+border-radius:10px;
+border:1px solid black;
+width:98%;
+height:400px;
+margin-left:auto;
+margin-right:auto;
+margin-top:10px;
+}
+
+.topic
+{
+flex:1;
+cursor:pointer;
+letter-spacing:0.5px;
+font-family:"Product Sans";
+font-size:25px;
+display:flex;
+align-items:flex-start;
+justify-content:flex-start;
+margin-left:0;
+padding:20px 30px;
+transition:0.5s;
+color:rgba(0,0,0,.54);
+padding-top:;
+
+}
+.topic:hover
+{
+color:#039be5;
+}
+.g1g
+{
+background:url("../res/drum_kit/products/fusion.jpg") no-repeat center;
+background-size:cover;
+background-attachment:fixed;
+height:100%;
+width: 100%;
+overflow: hidden;
+animation:inout 40s infinite;
+}
+
+.g2g
+{
+background:url("../res/drum_kit/products/jazz.jpg") no-repeat center;
+background-size:cover;
+background-attachment:fixed;
+height:100%;
+width: 100%;
+overflow: hidden;
+animation-delay: 15s;
+animation:inout 40s infinite;
+}
+
+.g3g
+{
+background:url("../res/drum_kit/products/auxiliary.jpg") no-repeat center;
+background-size:cover;
+background-attachment:fixed;
+height:100%;
+width: 100%;
+overflow: hidden;
+animation-delay: 20s;
+animation:inout 40s infinite;
+}
+
+.g4g
+{
+background:url("../res/drum_kit/products/power.jpg") no-repeat center;
+background-size:cover;
+background-attachment:fixed;
+height:100%;
+width: 100%;
+overflow: hidden;
+animation-delay: 25s;
+animation:inout 40s infinite;
+}
+
+.g5g
+{
+background:url("../res/drum_kit/products/12string.jpg") no-repeat center;
+background-size:cover;
+background-attachment:fixed;
+height:100%;
+width: 100%;
+overflow: hidden;
+animation-delay: 30s;
+animation:inout 40s infinite;
+}
+
+.p-nav
+{
+border-radius:5px;
+//line-height:25px;
+position:relative;
+right:0;
+float:right;
+//border:1px solid black;
+width:wrap;
+height:50px;
+display:flex;
+margin-right:1%;
+align-items:center;
+justify-content:space-between;
+align-self:center;
+}
+.ffav
+{
+cursor:pointer;
+display:flex;
+align-self:center;
+border-radius:50%;
+width:27.5px;
+height:27.5px;
+padding:10px;
+transition:0.3s;
+}
+.ffav:hover
+{
+background:rgba(215,90,74,0.3);
+}
+
+.ffav:active
+{
+background:rgba(215,90,74,0.5);
+}
+
+.ffav img:active
+{
+content:url("../res/icons/like.svg");
+}
+
+.dropd
+{
+cursor:pointer;
+display:flex;
+align-self:center;
+width:20px;
+height:20px;
+border-radius:50%;
+padding:5px;
+padding-left:7.5px;
+transition:0.3s;
+}
+.dropd:hover
+{
+
+}
+
+.dropd:active
+{
+border-radius:0;
+padding:0;
+padding-left:0;
+width:30px;
+height:30px;
+background:none;
+content:url("../res/icons/active-drop.png");
+}
+.ccounter
+{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-direction:row;
+}
+.addd
+{
+cursor:pointer;
+border-radius:50%;
+display:flex;
+align-self:center;
+width:15px;
+height:15px;
+padding:10px;
+transition:0.3s;
+}
+.addd:hover,.subb:hover
+{
+background-color:rgba(66,133,244,0.3);
+}
+.inin
+{
+}
+.addd:active,.subb:active
+{
+background-color:rgba(66,133,244,0.5);
+}
+.inin input
+{
+width:30px;
+display:flex;
+justify-content:flex-end;
+font-weight:bold;
+background:#fbfbfb;
+font-size:20px;
+color:#5aa5fe;
+text-align:center;
+border:none;
+font-family:"Open Sans";
+outline:none;
+}
+.subb
+{
+cursor:pointer;
+border-radius:50%;
+display:flex;
+align-self:center;
+width:15px;
+height:15px;
+padding:10px;
+transition:0.3s;
+}
+.p-rest
+{
+//border-bottom: 1px solid #000;
+flex-direction:row;
+display:flex;
+width:100%;
+space-between:100px;
+height:wrap;
+align-items:center;
+}
+input[type=number]::-webkit-inner-spin-button
+{ 
+-webkit-appearance: none;
+}
+, 
+input[type=number]::-webkit-outer-spin-button 
+{
+-webkit-appearance: none; 
+}
+.p1desc
+{
+border-radius:10px;
+box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+z-index:-1;
+position:relative;
+top:-30vh;
+margin:2%;
+height:wrap;
+display:flex;
+justify-content:center;
+//align-items:center;
+flex-direction:column;
+padding:10px 20px;
+background-color:white;
+transition:0.7s;
+}
+.hdes
+{
+position:absolute;
+top:150vh;
+width:20px;
+height:20px;
+border:1px solid black;
+z-index:;
+}
+
+.sas1
+{
+left:53.5%;
+}
+
+.sas2
+{
+left:60%;
+}
+.sas3
+{
+left:58%;
+}
+.sas4
+{
+left:53%;
+}
+.sas5
+{
+left:50%
+}
+.p-type
+{
+margin-top:-50px;
+}
+#pp1
+{
+margin-top:;
+}
+#h-pop-up
+{
+display:flex;
+align-items:center;
+justify-content:center;
+top:0;
+left:0;
+width:100%;
+height:100%;
+position:fixed;
+background:rgba(255,255,255,0.7);
+z-index:10000000;
+display:none;
+transition:1s;
+}
+
+#h-pop-up img
+{
+width:20%;
+height:20%;
+animation:hea 1s;
+}
+
+#h-pop-up img:hover
+{
+animation:hea 1s;
+}
+
+@keyframes hea
+{
+0%{width:5%;height:5%;}
+30%{width:20%;height:20%;}
+40%{width:35%;height:35%;}
+70%{width:20%;height:20%;}
+100%{width:20%;height:20%;}
+}
+@keyframes bhea
+{
+0%{background-color:rgba(255,255,255,0);}
+50%{background-color:rgba(255,255,255,0.35);}
+100%{background-color:rgba(255,255,255,0.7);;}
+}
+.p-rest
+{
+	z-index:;
+}
+#pp1
+{
+
+	position:relative;
+	z-index:10;
+}
+#seg
+{
+	top:-395px;
+	z-index:9;
+}
+#pp2
+{
+	//top:-200px;
+	position: element(#pp1);
+	z-index:8;
+}
+#ssg
+{
+	top:-400px;
+	position:relative;
+}
+#pp3
+{
+	top:;
+	position: element(#pp2);
+	z-index:7;
+}
+#sag
+{
+	top:-300px;
+	position:relative;
+}
+#pp4
+{
+
+	position: element(#pp3);
+	z-index:6;
+}
+#srg
+{
+	top:-200px;
+	z-index:5;
+}
+#pp5
+{
+	position: element(#pp4);
+	z-index:4;
+}
+#stg
+{
+	top:-180px;
+	z-index:3;
+}
+
+@font-face
+{
+font-family:"fr";
+src:url(fr.ttf);
+}
+
+.bill
+{
+	
+	font-family:"fr";
+	padding-top:20px;
+	padding-left:10px;
+	padding-bottom:50px;
+	padding-right:10px;
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	//background:url("../res/others/bbill2.jpg");
+	font-size: 13px;
+	color:black;
+	flex-direction: column;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+	background-color:#fff;
+	margin:2%;
+	position: relative;
+	top:-100px;
+	display: flex;
+	width:50vw;
+	height: wrap;
+	border-top: 1px solid #8a795d;
+	
+}
+
+.bill:after {
+
+    background: linear-gradient(-45deg, #f6f6f6 16px, transparent 0), linear-gradient(45deg, #f6f6f6 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    color:black;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
+.final-list
+{
+	font-size: 20px;
+	//border: 1px solid black;
+	width: 100%;
+}
+.final-list-items
+{
+	transition:1s;
+	text-align: center;
+	//border:1px solid black;
+	width: 100%;
+	space-between:justify-content;
+	flex-direction: row;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	height: 70px;
+}
+.item-name
+{
+	flex:1;
+	height:100%;
+	width:100%;
+	//border:1px solid #000;
+	font-size:20px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+.item-details
+{
+	flex:1;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.detail-name
+{
+	
+	//border:1px solid #000;
+	align-items:center;
+	justify-content: center;
+	flex:1;
+	display: flex;
+}
+.detail-value
+{
+	//border:1px solid #000;
+	align-items:center;
+	justify-content: center;
+	flex:1;
+	display: flex;
+}
+
+@keyframes inout
+{
+	0%{transform: scale(1);	}
+	50%{ transform: scale(1.2); }
+	100%{transform: scale(1);}
+}
+
+
+.product-details
+{
+//flex-basis:1;
+height:wrap;
+margin-top:20px;
+align-items:center;
+justify-content:center;
+width:100%;
+display: flex;
+flex-direction: row;
+padding-bottom:15px;
+padding-top:15px;
+font-family:"Comic Sans MS";
+//border:1px solid #000;
+}
+.product-price
+{
+flex:1;
+height:wrap;
+width:100%;
+align-items:center;
+justify-content:center;
+flex-shrink:1;
+//border:1px solid #000;
+flex-direction:row;
+display:flex;
+height:wrap;
+}
+.product-name
+{
+width:100%;
+color:grey;
+align-items:center;
+justify-content:center;
+flex:1 !important;
+flex-shrink:1;
+display:flex;
+font-size:20px;
+transition:1s;
+height:wrap;
+}
+.product-name:hover
+{
+cursor:default;
+color:blue;
+}
+
+.product-name:active
+{
+//cursor:grabbing;
+color:blue;
+}
+.product::select
+{
+background:none;
+}
+
+.product-value
+{
+width:100%;
+font-size:20px;
+height:100%;
+align-items:center;
+justify-content:center;
+//border:1px solid black;
+flex:1;
+display:flex;
+height:wrap;
+}
+
+
+@media screen and (max-width:1250px) 
+{
+.product-name:hover
+{
+color:blue;
+}
+
+.product-details
+{
+//left:15%;
+transform:translateY(-10%);
+position:relative;
+width:100%;
+display:table;
+flex-direction:row;
+}
+.product-value
+{
+justify-content:flex-start;
+width:100%;
+flex:1;
+flex-direction:row;
+}
+.product-name
+{
+justify-content:flex-start;
+width:100%;
+flex:1;
+transition:1s;
+flex-direction:row;
+}
+#pp1
+{
+	top:;
+	position:relative;
+	z-index:10;
+}
+#seg
+{
+	top:-95vh;
+	position: relative;
+	transition: 1s;
+}
+
+.p-rest
+{
+	z-index: -999;
+}
+
+.p-rest:hover ~ #seg
+{
+	top:-50px;
+}
+#pp2
+{
+	//top:200px;
+	position: element(#pp1);
+	z-index:8;
+}
+#ssg
+{
+	top:-350px;
+	position:relative;
+}
+#pp3
+{
+	top:;
+	position: element(#pp2);
+	z-index:7;
+}
+#sag
+{
+	top:-200px;
+	position:relative;
+}
+#pp4
+{
+
+	position: element(#pp3);
+	z-index:6;
+}
+#srg
+{
+	top:-400px;
+	z-index:5;
+}
+#pp5
+{
+	position: element(#pp4);
+	z-index:4;
+}
+#stg
+{
+	top:-180px;
+	z-index:3;
+}
+}
+
+.cash
+{
+flex-direction: row;
+display:none;
+color:brown;
+font-size:20px;
+font-weight:;
+margin-left:-30px;
+}
+
+#p1
+{
+transition:1s ease-in;
+display:none;
+color:brown;
+font-size:20px;
+font-weight:;
+}
+
+#p2
+{
+
+flex-direction: row;
+transition:1s ease-in;
+display:none;
+color:brown;
+font-size:20px;
+font-weight:;
+}
+
+#p3
+{
+transition:1s ease-in;
+display:none;
+color:brown;
+font-size:20px;
+font-weight:;
+}
+
+#p4
+{
+transition:1s ease-in;
+display:none;
+color:brown;
+font-size:20px;
+font-weight:;
+}
+
+#p5
+{
+transition:1s ease-in;
+display:none;
+color:brown;
+font-size:20px;
+font-weight:;
+}
+
+.pre
+{
+color:;
+display:flex;
+align-self:center;
+position:relative;
+top:-140px;
+font-family:"Product Sans";
+font-size:40px;
+letter-spacing:1;
+}
+.fffinal
+{
+font-size:20px;
+top:-100px;
+position:relative;
+display:flex;
+flex-direction:row;
+width:50vw;
+align-self:center;
+space-between:20px;
+align-items:flex-end;
+justify-content:flex-end;
+//padding-right:50%;
+//text-transform:uppercase;
+}
+.check
+{
+display:;
+cursor:pointer;
+margin-right:10px;
+background-color:#00ff00;
+background:#39ff14;
+border:1px solid #000;
+color:white;
+padding:10px 20px;
+font-family:"Product Sans";
+transition:0.3s;
+text-decoration:none;
+}
+.reset
+{
+cursor:pointer;
+background:rgb(255,0,0);
+
+border:1px solid #000;
+color:white;
+padding:10px 20px;
+font-family:"Product Sans";
+transition:0.3s;
+text-decoration:none;
+}
+.reset:hover
+{
+background:rgb(220,0,0);
+}
+.check:hover
+{
+background:rgb(0,220,0);
+}
+
+.reset:active
+{
+background:rgb(250,0,0);
+}
+.check:active
+{
+background:rgb(0,250,0);
+}
+
+</style>
+</head>
+<body onload="spnavbar()">
+	<script type="text/javascript">
+		function spnavbar()
+		{
+			document.getElementById("nnnav").style.margin="0";
+		}
+	</script>
+<audio controls autoplay>
+  <source src="../res/drum_kit/products/bg.mp3" type="audio/mpeg">
+    Hello World
+</audio>
+<div class="header" id="nnnav" >
+	<img src="../res/icons/menu.png" class="ham">
+    <h2 class="logo">TPoly</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="#">Start</a>
+      <a href="../main/home.htm">Home</a>
+      <a href="../main/login.html">Login</a>
+      <a href="#">Contact Us</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+<div class="middle" id="ma">
+<div class="slideshow" id="m1">
+<div class="hello">
+<p class="w-message">WELCOME TO THE DRUM KIT ARENA!</p>
+<a href="#maincontent" onclick="startt1()" class="d1">GET STARTED
+<img src="../res/icons/right-arrow.png" class="arrow"></a>
+</div>
+<div class="slides">
+<input type="radio" name="r" id="r1" checked>
+<input type="radio" name="r" id="r2">
+<input type="radio" name="r" id="r3">
+<input type="radio" name="r" id="r4">
+<input type="radio" name="r" id="r5">
+<div class="s1"><img src="../res/drum_kit/products/0.jpg" alt=""></div>
+<div class="slide"><img src="../res/drum_kit/products/1.jpg" alt=""></div>
+<div class="slide"><img src="../res/drum_kit/products/2.jpg" alt=""></div>
+<div class="slide"><img src="../res/drum_kit/products/3.jpg" alt=""></div>
+<div class="slide"><img src="../res/drum_kit/products/4.jpg" alt=""></div>
+</div>
+<div class="navigation" id="maincontent">
+<label for="r1" class="bar"></label>
+<label for="r2" class="bar"></label>
+<label for="r3" class="bar"></label>
+<label for="r4" class="bar"></label>
+<label for="r5" class="bar"></label>
+</div>
+</div>
+</div>
+<script>
+
+function noicea()
+{
+	document.getElementById("h-pop-up").style.display="none";
+}
+
+function noiceb()
+{	
+	document.getElementById("h-pop-up").style.display="flex";
+	setTimeout(noicea,1000);
+}
+var x=document.getElementsByClassName("cash");
+var i = 2;
+var c1 = 2;
+var cost1= 0;
+var qq1=0;
+var cc1=0;
+var ccf=0;
+function inceg()
+{
+  x[0].style.display="block";
+  document.getElementById("eg").stepUp(1);
+  if(cost1<139000)
+    {
+	
+	cost1=cost1+13900;
+	qq1=qq1+1;
+	ccf=ccf+13900;
+	cc1=qq1*13900;
+	document.getElementById("p1").innerHTML=cost1;
+  document.getElementById("cf").innerHTML=ccf;
+	document.getElementById("q1").innerHTML=qq1;
+	document.getElementById("c1").innerHTML=cc1;
+    }
+  if(cost1!=0)
+    {
+	document.getElementById("p1").style.display="block";
+    }
+  else
+    {
+	x[0].style.display="none";
+	document.getElementById("p1").style.display="none";
+    }
+      if(qq1==0)
+    {
+	document.getElementById("item1").style.display="none";
+	document.getElementById("item1").style.height="0";
+    }
+    else
+    {
+	document.getElementById("item1").style.display="flex";
+	document.getElementById("item1").style.height="70px";
+    }
+
+}
+function deceg() {
+  document.getElementById("eg").stepUp(-1);
+ if(cost1>0)
+    {
+  ccf=ccf-13900;
+  qq1=qq1-1;
+  cc1=qq1*13900;
+  cost1=cost1-13900;
+  document.getElementById("p1").innerHTML=cost1;
+  document.getElementById("q1").innerHTML=qq1;
+  document.getElementById("cf").innerHTML=ccf;
+  document.getElementById("c1").innerHTML=cc1;
+
+    }
+  if(cost1>0)
+    {
+	document.getElementById("p1").style.display="block";
+    }
+  else
+    {
+	x[0].style.display="none";
+	document.getElementById("p1").style.display="none";
+    }
+    if(qq1==0)
+    {
+	document.getElementById("item1").style.display="none";
+	document.getElementById("item1").style.height="0";
+    }
+    else
+    {
+	document.getElementById("item1").style.display="flex";
+	document.getElementById("item1").style.height="70px";
+    }
+}
+function seg() 
+{
+if(i%2==0)
+{
+i++;
+document.getElementById("seg").style.top="-45px";
+}
+else
+{
+i++;
+document.getElementById("seg").style.top="-395px";
+}
+}
+function like1()
+{
+if(c1%2==0)
+{
+c1++;
+document.getElementsByClassName("example");
+noiceb();
+document.getElementById("h1g").src= "../res/icons/like.svg";
+}
+else
+{
+c1++;
+document.getElementById("h1g").src="../res/icons/unlike.svg";
+}
+}
+</script>
+<div class="maincontent" style="">
+<div class="p-index">
+<div class="p-type pp1" id="pp1">
+<div class="p-img"><div class="g1g">0</div></div>
+<div class="p-rest">
+<p class="topic" onclick="seg()">FUSION DRUM KIT</p>
+<div class="p-nav">
+<p class="cash">&#8377;<div id="p1">0</div></p>
+<div class="ffav" onclick="like1()"><img src="../res/icons/unlike.png" width="27.5px" height="27.5px" id="h1g"></div>
+<div class="ccounter">
+<div class="subb" onclick="deceg()"><img src="../res/icons/minus.svg" height="15px" width="15px"></div>
+<div class="inin"><input type="number" value="0" min="0" max="10" id="eg"></div>
+<div class="addd" onclick="inceg()"><img src="../res/icons/plus.svg" height="15px" width="15px"></div>
+</div>
+<div class="dropd" onclick="seg()"><img src="../res/icons/ddrop.png" width="16px" height="20px"></div>
+</div>
+</div>
+</div>
+<div class="p1desc" id="seg">
+<div><font size="1" color="grey">.</font></div>
+<div style="padding-bottom:5px;padding-top:5px;font-family:"Comic Sans MS";background-color:;">
+</div>
+<div><font size="4.5px">If you’re new to the world of drumming, then you may well find that a fusion drum kit is perfect for you. This is because it is a great kit for beginners.<br><br>Why?<br><br>
+<ul style="margin-left:30px;">
+<li>The other advantage of a fusion drum kit is that it is also great for children from around seven or eight years old. So if you have a child that would like to learn to play the drums or start practising with a junior drum set, suggesting a fusion drum kit might be the way to go.</li>
+<li> it’s worth noting that a fusion drum kit is, first and foremost, known as a kit that allows drummers to play fusion music. That means that regardless of whether you’d like to play:that regardless of whether you’d like to play:</li>
+<li> What’s more, you don’t have to be a novice drummer to play music on this type of kit – in fact, any ability level should be able to play on a fusion drum kit successfully!</li>
+<li> You can plug headphones into your amplifier, so you won't disturb your neighbours.</li>
+</ul>
+</font></div>
+<div class="product-details">
+<div class="product-price"  style="flex:0.51;">
+<div class="product-name" style="flex:1;">Price : </div>
+<div class="product-value"  style="flex:1;">&#8377;13,900</div>
+</div>
+<div class="product-price" style="flex:0.568;">
+<div class="product-name" style="flex:1;">Rating : </div>
+<div class="product-value">9.8 / 10</div>
+</div>
+
+<div class="product-price" style="flex:0.8;">
+<div class="product-name" style="flex:10;">Bass Drum: </div>
+<div class="product-value">22" x 16"</div>
+</div>
+<div class="product-price" style="flex:0.48;">
+<div class="product-name" style="flex:1;">Tom : </div>
+<div class="product-value">	12 x 9"</div>
+</div>
+
+
+<div class="product-price" style="flex:0.65;">
+<div class="product-name" style="flex:1;">Weight : </div>
+<div class="product-value" style="">68 - 80 kg</div>
+</div>
+
+<div class="product-price" style="flex:0.5;">
+<div class="product-name" style="flex:;">In-Stock : </div>
+<div class="product-value" style="flex:0.4;color:#228b22;">Yes</div>
+</div>
+</div>
+</div>
+<script>
+var i = 2;
+var c2 = 2;
+var cost2= 0;
+var qq2=0;
+var cc2;
+function incsg() 
+{
+x[1].style.display="block";
+  document.getElementById("sg").stepUp(1);
+  if(cost2<178900)
+    {
+  ccf=ccf+17890;
+  qq2=qq2+1;
+  cc2=qq2*17890;
+  cost2=cost2+17890;
+  document.getElementById("p2").innerHTML=cost2;
+  document.getElementById("q2").innerHTML=qq2;
+  document.getElementById("cf").innerHTML=ccf;
+  document.getElementById("c2").innerHTML=cc2;
+    }
+  if(cost2!=0)
+    {
+	document.getElementById("p2").style.display="block";
+    }
+  else
+    {
+	x[1].style.display="none";
+	document.getElementById("p2").style.display="none";
+    }
+      if(qq2==0)
+    {
+	document.getElementById("item2").style.display="none";
+	document.getElementById("item2").style.height="0";
+    }
+    else
+    {
+	document.getElementById("item2").style.display="flex";
+	document.getElementById("item2").style.height="70px";
+    }
+
+}
+
+function decsg() {
+document.getElementById("sg").stepUp(-1);
+ if(cost2>0)
+    {
+  ccf=ccf-17890;
+  qq2=qq2-1;
+  cc2=qq2*17890;
+  cost2=cost2-17890;
+  document.getElementById("p2").innerHTML=cost2;
+  document.getElementById("q2").innerHTML=qq2;
+  document.getElementById("cf").innerHTML=ccf;
+  document.getElementById("c2").innerHTML=cc2;
+    }
+  if(cost2>0)
+    {
+	document.getElementById("p2").style.display="block";
+    }
+  else
+    {
+	x[1].style.display="none";
+	document.getElementById("p2").style.display="none";
+    }
+      if(qq2==0)
+    {
+	document.getElementById("item2").style.display="none";
+	document.getElementById("item2").style.height="0";
+    }
+    else
+    {
+	document.getElementById("item2").style.display="flex";
+	document.getElementById("item2s").style.height="70px";
+    }
+
+}
+
+function ssg() {
+if(i%2==0)
+{
+i++;
+document.getElementById("ssg").style.top="-45px";
+}
+else
+{
+i++;
+document.getElementById("ssg").style.top="-420px";
+}
+}
+
+function like2()
+{
+if(c2%2==0)
+{
+c2++;
+noiceb();
+document.getElementById("h2g").src="../res/icons/like.svg";
+}
+else
+{
+c2++;
+document.getElementById("h2g").src="../res/icons/unlike.svg";
+}
+}
+</script>
+<div class="p-type" id="pp2">
+<div class="p-img"><div class="g2g"></div></div>
+<div class="p-rest">
+<p class="topic" onclick="ssg()">JAZZ DRUM KIT</p>
+<div class="p-nav">
+<p class="cash">&#8377;<div id="p2">0</div></p>
+<div class="ffav" onclick="like2()"><img src="../res/icons/unlike.png" width="27.5px" height="27.5px" id="h2g"></div>
+<div class="ccounter">
+<div class="subb" onclick="decsg()"><img src="../res/icons/minus.svg" height="15px" width="15px"></div>
+<div class="inin"><input type="number" value="0" min="0" max="10" id="sg"></div>
+<div class="addd" onclick="incsg()"><img src="../res/icons/plus.svg" height="15px" width="15px"></div>
+</div>
+<div class="dropd" onclick="ssg()"><img src="../res/icons/ddrop.png" width="16px" height="20px"></div>
+</div>
+</div>
+</div>
+<div class="p1desc" id="ssg">
+<div><font size="1" color="grey">.</font></div>
+<div style="padding-bottom:5px;padding-top:5px;font-family:"Comic Sans MS";background-color:;">
+</div>
+<div><font size="4.5px">What make jazz drums different form the rest?<br><br>
+
+While playing the jazz drums, drummers often prefer to use brushes rather than traditional sticks. Metal or plastic brushes are used instead of wooden drumsticks.<br>
+
+
+Jazz music often uses brushes rather than your typical drumstick.<br>
+
+While jazz appears to be unplanned, rhythm and timing play an important role. You can hardly compare a jazz drummer to a rock drummer and a jazz drum kit looks different to a rock one.<br>
+
+Brushes allow you to express ideas you can’t with traditional drumsticks and you’ll need to learn to play with them if you really want to become a master of your instrument. They first appeared in the 1920s as a way to decrease the noise created by snare drums. This is because jazz was first played in small venues and rooms.<br>
+
+Brushes allow you to play more quietly. They’re very useful for ghost notes. These notes are soft strokes on the snare drum.<br>
+
+You’ll find tonnes of different types of brushes in a drum shop: retractable brushes, metal or plastic brushes, woven metal brushes, etc. Light drumsticks are useful for those just starting out because brushes require a drumming technique that a lot of new drummers won’t be familiar with.<br>
+</font></div>
+<div class="product-details">
+<div class="product-price"  style="flex:0.51;">
+<div class="product-name" style="flex:1;">Price : </div>
+<div class="product-value"  style="flex:1;">&#8377;17,890</div>
+</div>
+<div class="product-price" style="flex:0.568;">
+<div class="product-name" style="flex:1;">Rating : </div>
+<div class="product-value">9.8 / 10</div>
+</div>
+
+<div class="product-price" style="flex:0.8;">
+<div class="product-name" style="flex:10;">Bass Drum: </div>
+<div class="product-value">22" x 16"</div>
+</div>
+<div class="product-price" style="flex:0.48;">
+<div class="product-name" style="flex:1;">Tom : </div>
+<div class="product-value">	12" x 9"</div>
+</div>
+
+
+<div class="product-price" style="flex:0.65;">
+<div class="product-name" style="flex:1;">Weight : </div>
+<div class="product-value" style="">68 - 80 kg</div>
+</div>
+
+<div class="product-price" style="flex:0.5;">
+<div class="product-name" style="flex:;">In-Stock : </div>
+<div class="product-value" style="flex:0.4;color:#228b22;">Yes</div>
+</div>
+</div>
+</div>
+<script>
+var i = 2;
+var c3 = 2;
+var cost3= 0;
+var qq3=0;
+var cc3;
+
+function incag() {
+x[2].style.display="block";
+  document.getElementById("ag").stepUp(1);
+  if(cost3<157150)
+    {
+  ccf=ccf+15715;
+  qq3=qq3+1;
+  cc3=qq3*15715;
+  cost3=cost3+15715;
+  document.getElementById("p3").innerHTML=cost3;
+  document.getElementById("q3").innerHTML=qq3;
+  document.getElementById("cf").innerHTML=ccf;
+  document.getElementById("c3").innerHTML=cc3;
+    }
+  if(cost3!=0)
+    {
+	document.getElementById("p3").style.display="block";
+    }
+  else
+    {
+	x[2].style.display="none";
+	document.getElementById("p3").style.display="none";
+    }
+      if(qq3==0)
+    {
+	document.getElementById("item3").style.display="none";
+	document.getElementById("item3").style.height="0";
+    }
+    else
+    {
+	document.getElementById("item3").style.display="flex";
+	document.getElementById("item3").style.height="70px";
+    }
+
+}
+function decag() {
+document.getElementById("ag").stepUp(-1);
+ if(cost3>0)
+    {
+  ccf=ccf-15715;
+  qq3=qq3-1;
+  cc3=qq3*15715;
+  cost3=cost3-15715;
+  document.getElementById("p3").innerHTML=cost3;
+  document.getElementById("q3").innerHTML=qq3;
+  document.getElementById("cf").innerHTML=ccf;
+  document.getElementById("c3").innerHTML=cc3;
+    }
+  if(cost3>0)
+    {
+	document.getElementById("p3").style.display="block";
+    }
+  else
+    {
+	x[2].style.display="none";
+	document.getElementById("p3").style.display="none";
+    }
+      if(qq3==0)
+    {
+	document.getElementById("item3").style.display="none";
+	document.getElementById("item3").style.height="0";
+    }
+    else
+    {
+	document.getElementById("item3").style.display="flex";
+	document.getElementById("item3").style.height="70px";
+    }
+
+}
+function sag() {
+if(i%2==0)
+{
+i++;
+document.getElementById("sag").style.top="-45px";
+}
+else
+{
+i++;
+document.getElementById("sag").style.top="-200px";
+}
+}
+function like3()
+{
+if(c3%2==0)
+{
+c3++;
+noiceb();
+document.getElementById("h3g").src="../res/icons/like.svg";
+}
+else
+{
+c3++;
+document.getElementById("h3g").src="../res/icons/unlike.svg";
+}
+}
+</script>
+<div class="p-type" id="pp3">
+<div class="p-img"><div class="g3g"></div></div>
+<div class="p-rest">
+<p class="topic" onclick="sag()">AUXILLARY DRUM SET</p>
+<div class="p-nav">
+<p class="cash">&#8377;<div id="p3">0</div></p>
+<div class="ffav" onclick="like3()"><img src="../res/icons/unlike.png" width="27.5px" height="27.5px" id="h3g"></div>
+<div class="ccounter">
+<div class="subb" onclick="decag()"><img src="../res/icons/minus.svg" height="15px" width="15px"></div>
+<div class="inin"><input type="number" value="0" min="0" max="10" id="ag"></div>
+<div class="addd" onclick="incag()"><img src="../res/icons/plus.svg" height="15px" width="15px"></div>
+</div>
+<div class="dropd" onclick="sag()"><img src="../res/icons/ddrop.png" width="16px" height="20px"></div>
+</div>
+</div>
+</div>
+<div class="p1desc" id="sag">
+<div><font size="1" color="grey">.</font></div>
+<div style="padding-bottom:5px;padding-top:5px;font-family:"Comic Sans MS";background-color:;">
+</div>
+<div><font size="4.5px"><p>These are a complete playground for the adventurous. They can include elements from the whole spectrum: drums, bells, blocks, triangles, chimes, etc. Auxiliary drum sets are for solo applications or bands, often in addition to a drum set.</p><br>
+	<p>The model used here is made of genuine B20 cymbal bronze. It is cut into an elegant crescent moon shape that allows its sound to project to its fullest. It is attached to the drum by two clamps that attach to the rim.</p>
+</font></div>
+<div class="product-details">
+<div class="product-price"  style="flex:0.51;">
+<div class="product-name" style="flex:1;">Price : </div>
+<div class="product-value"  style="flex:1;">&#8377;13,900</div>
+</div>
+<div class="product-price" style="flex:0.568;">
+<div class="product-name" style="flex:1;">Rating : </div>
+<div class="product-value">9.8 / 10</div>
+</div>
+
+<div class="product-price" style="flex:0.8;">
+<div class="product-name" style="flex:10;">Bass Drum: </div>
+<div class="product-value">22" x 16"</div>
+</div>
+<div class="product-price" style="flex:0.48;">
+<div class="product-name" style="flex:1;">Tom : </div>
+<div class="product-value">	12 x 9"</div>
+</div>
+
+
+<div class="product-price" style="flex:0.65;">
+<div class="product-name" style="flex:1;">Weight : </div>
+<div class="product-value" style="">68 - 80 kg</div>
+</div>
+
+<div class="product-price" style="flex:0.5;">
+<div class="product-name" style="flex:;">In-Stock : </div>
+<div class="product-value" style="flex:0.4;color:red;">No</div>
+</div>
+</div>
+</div>
+<script>
+var i = 2;
+var c4 = 2;
+var cost4= 0;
+var qq4=0;
+var cc4;
+
+function incrg() {
+x[3].style.display="block";
+  document.getElementById("rg").stepUp(1);
+  if(cost4<217200)
+    {
+  ccf=ccf+21720;
+  qq4=qq4+1;
+  cc4=qq4*21720;
+  cost4=cost4+21720;
+  document.getElementById("p4").innerHTML=cost4;
+  document.getElementById("q4").innerHTML=qq4;
+  document.getElementById("cf").innerHTML=ccf;
+  document.getElementById("c4").innerHTML=cc4;
+    }
+  if(cost4!=0)
+    {
+	document.getElementById("p4").style.display="block";
+    }
+  else
+    {
+	x[1].style.display="none";
+	document.getElementById("p4").style.display="none";
+    }
+      if(qq4==0)
+    {
+	document.getElementById("item4").style.display="none";
+	document.getElementById("item4").style.height="0";
+    }
+    else
+    {
+	document.getElementById("item4").style.display="flex";
+	document.getElementById("item4").style.height="70px";
+    }
+
+}
+function decrg() {
+document.getElementById("rg").stepUp(-1);
+ if(cost4>0)
+    {
+  ccf=ccf-21720;
+  qq4=qq4-1;
+  cc4=qq4*21720;
+  cost4=cost4-21720;
+  document.getElementById("p4").innerHTML=cost4;
+  document.getElementById("q4").innerHTML=qq4;
+  document.getElementById("cf").innerHTML=ccf;
+  document.getElementById("c4").innerHTML=cc4;
+    }
+  if(cost4>0)
+    {
+	document.getElementById("p4").style.display="block";
+    }
+  else
+    {
+	x[3].style.display="none";
+	document.getElementById("p4").style.display="none";
+    }
+      if(qq4==0)
+    {
+	document.getElementById("item4").style.display="none";
+	document.getElementById("item4").style.height="0";
+    }
+    else
+    {
+	document.getElementById("item4").style.display="flex";
+	document.getElementById("item4").style.height="70px";
+    }
+}
+function srg() {
+if(i%2==0)
+{
+i++;
+document.getElementById("srg").style.top="-45px";
+}
+else
+{
+i++;
+document.getElementById("srg").style.top="-200px";
+}
+}
+function like4()
+{
+if(c4%2==0)
+{
+c4++;
+noiceb();
+document.getElementById("h4g").src="../res/icons/like.svg";
+}
+else
+{
+c4++;
+document.getElementById("h4g").src="../res/icons/unlike.svg";
+}
+}
+</script>
+<div class="p-type" id="pp4">
+<div class="p-img"><div class="g4g"></div></div>
+<div class="p-rest">
+<p class="topic" onclick="srg()">POWER DRUM KIT</p>
+<p class="cash">&#8377;<div id="p4">0</div></p>
+<div class="p-nav">
+<div class="ffav" onclick="like4()"><img src="../res/icons/unlike.png" width="27.5px" height="27.5px" id="h4g"></div>
+<div class="ccounter">
+<div class="subb" onclick="decrg()"><img src="../res/icons/minus.svg" height="15px" width="15px"></div>
+<div class="inin"><input type="number" value="0" min="0" max="10" id="rg"></div>
+<div class="addd" onclick="incrg()"><img src="../res/icons/plus.svg" height="15px" width="15px"></div>
+</div>
+<div class="dropd" onclick="srg()"><img src="../res/icons/ddrop.png" width="16px" height="20px"></div>
+</div>
+</div>
+</div>
+<div class="p1desc" id="srg">
+<div><font size="1" color="grey">.</font></div>
+<div style="padding-bottom:5px;padding-top:5px;font-family:"Comic Sans MS";background-color:;">
+</div>
+<div><font size="4.5px">A resonator guitar or resophonic guitar is an acoustic guitar that produces sound by conducting string vibrations through the bridge to one or more spun metal cones (resonators), instead of to the guitar's sounding board (top). Resonator guitars were originally designed to be louder than regular acoustic guitars, which were overwhelmed by horns and percussion instruments in dance orchestras. They became prized for their distinctive tone, however, and found life with bluegrass music and the blues well after electric amplification solved the problem of inadequate volume.
+</font></div>
+<div class="product-details">
+<div class="product-price"  style="flex:0.51;">
+<div class="product-name" style="flex:1;">Price : </div>
+<div class="product-value"  style="flex:1;">&#8377;13,900</div>
+</div>
+<div class="product-price" style="flex:0.568;">
+<div class="product-name" style="flex:1;">Rating : </div>
+<div class="product-value">9.8 / 10</div>
+</div>
+
+<div class="product-price" style="flex:0.8;">
+<div class="product-name" style="flex:10;">Bass Drum: </div>
+<div class="product-value">22" x 16"</div>
+</div>
+<div class="product-price" style="flex:0.48;">
+<div class="product-name" style="flex:1;">Tom : </div>
+<div class="product-value">	12 x 9"</div>
+</div>
+
+
+<div class="product-price" style="flex:0.65;">
+<div class="product-name" style="flex:1;">Weight : </div>
+<div class="product-value" style="">68 - 80 kg</div>
+</div>
+
+<div class="product-price" style="flex:0.5;">
+<div class="product-name" style="flex:;">In-Stock : </div>
+<div class="product-value" style="flex:0.4;color:#228b22;">Yes</div>
+</div>
+</div>
+</div>
+<script>
+var i = 2;
+var c5 = 2;
+var cost5= 0;
+var qq5=0;
+var cc5;
+
+function inctg() {
+x[4].style.display="block";
+  document.getElementById("tg").stepUp(1);
+  if(cost5<267230)
+    {
+  ccf=ccf+26723;
+  qq5=qq5+1;
+  cc5=qq5*26723;
+  cost5=cost5+26723;
+  document.getElementById("p5").innerHTML=cost5;
+  document.getElementById("cf").innerHTML=ccf;
+  document.getElementById("q5").innerHTML=qq5;
+  document.getElementById("c5").innerHTML=cc5;
+    }
+  if(cost5!=0)
+    {
+	document.getElementById("p5").style.display="block";
+    }
+  else
+    {
+	x[4].style.display="none";
+	document.getElementById("p5").style.display="none";
+    }
+      if(qq5==0)
+    {
+	document.getElementById("item5").style.display="none";
+	document.getElementById("item5").style.height="0";
+    }
+    else
+    {
+	document.getElementById("item5").style.display="flex";
+	document.getElementById("item5").style.height="70px";
+    }
+}
+function dectg() {
+document.getElementById("tg").stepUp(-1);
+ if(cost5>0)
+    {
+  ccf=ccf-26723;
+  qq5=qq5-1;
+  cc5=qq5*26723;
+  cost5=cost5-26723;
+  document.getElementById("p5").innerHTML=cost5;
+  document.getElementById("qf").innerHTML=qqf;
+  document.getElementById("cf").innerHTML=ccf;
+  document.getElementById("c5").innerHTML=cc5;
+    }
+  if(cost5>0)
+    {
+	document.getElementById("p5").style.display="block";
+    }
+  else
+    {
+	x[4].style.display="none";
+	document.getElementById("p5").style.display="none";
+    }
+      if(qq5==0)
+    {
+	document.getElementById("item5").style.display="none";
+	document.getElementById("item5").style.height="0";
+    }
+    else
+    {
+	document.getElementById("item5").style.display="flex";
+	document.getElementById("item5").style.height="70px";
+    }
+}
+function stg() {
+if(i%2==0)
+{
+i++;
+document.getElementById("stg").style.top="-45px";
+}
+else
+{
+i++;
+document.getElementById("stg").style.top="-180px";
+}
+}
+function like5()
+{
+if(c5%2==0)
+{
+c5++;
+noiceb();
+document.getElementById("h5g").src="../res/icons/like.svg";
+}
+else
+{
+c5++;
+document.getElementById("h5g").src="../res/icons/unlike.svg";
+}
+}
+function printDiv(divName) {
+     document.getElementById("printit").style.border = "1px solid #000000";
+     document.getElementById("sno").style.display="flex";
+     document.getElementById("sno1").style.display="flex";
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+     document.getElementById("printit").style.border="none";
+     document.getElementById("sno1").style.display="none";
+     document.getElementById("sno").style.display="none";
+}
+</script>
+
+</div>
+<div class="pre" align="center">Please have a look at your final bill preview</div>
+<div class="bill" id="printit">
+<div style="display:none;font-size:20px;text-align:center;width:100%;font-family:"ffbb";" id="sno1">
+
+</div>
+<br>
+<div style="border-top:1px solid #000;width:100%;border-bottom:1px solid #000;width:100%;display: flex;align-self:center;align-items:center;justify-content:center;font-size:20px;padding-bottom:5px;">YOUR FINAL BILL:</div>
+<ol type="" class="final-list">
+	<li class="final-list-items" id="item" style="border-bottom:;"><div style="flex:2;text-align: left;padding-left: 20px;">Instrument Name</div><div style="flex:1;">Price</div><div style="flex:1;">Quantity</div><div style="flex:1;">Total</div></li>
+	<li class="final-list-items" id="item1" style="display:none;"><div style="flex:2;text-align: left;padding-left: 30px;">Electric Guitar</div><div style="flex:1;">&#8377;12,800</div><div style="flex:1;" id="q1">0</div><div style="flex:1;" id="c1">0</div></li>
+	<li class="final-list-items" id="item2" style="display:none;"><div style="flex:2;text-align: left;padding-left: 30px;">Steel Guitar</div><div style="flex:1;">&#8377;17,600</div><div style="flex:1;" id="q2">0</div><div style="flex:1;" id="c2">0</div></li>
+	<li class="final-list-items" id="item3"  style="display:none;"><div style="flex:2;text-align: left;padding-left: 30px;">Acounstic Guitar</div><div style="flex:1;">&#8377;9,820</div><div style="flex:1;" id="q3">0</div><div style="flex:1;" id="c3">0</div></li>
+	<li class="final-list-items" id="item4" style="display:none;"><div style="flex:2;text-align: left;padding-left: 30px;">Resonator Guitar</div><div style="flex:1;">&#8377;10,600</div><div style="flex:1;" id="q4">0</div><div style="flex:1;" id="c4">0</div></li>
+	<li class="final-list-items" id="item5" style="display:none;"><div style="flex:2;text-align: left;padding-left: 30px;">Twelve String Guitar</div><div style="flex:1;">&#8377;26,723</div><div style="flex:1;" id="q5">0</div><div style="flex:1;" id="c5">0</div></li>
+<li class="final-list-items" id="itemf" style="border-top:1px solid #000;"><div style="flex:2;text-align: left;padding-left: 30px;">Grand Total:</div><div style="flex:3;display:inline-flex;justify-content:center;flex-direction:row;">&#8377;<div  id="cf">0</div>
+</div>
+
+</li>
+</ol>
+<center style="padding-top:28vh;display:none;font-size:18px;align-self:flex-end;height:100%;align-items:flex-end;justify-content:flex-end;" id="sno">
+<i>
+-------------------------------------------------------------------------------------------------------------<br>
+Your order has been placed.<br>
+You will be contacted within 12 hours for further information.<br>
+==================================================================<br>
+Thank you for shopping with TPOLY.<br>
+==================================================================
+</i>
+</center>
+</div>
+<div class="fffinal">
+<a onclick="printDiv('printit')" class="check">Proceed to checkout</a>
+<a href="#"  class="reset">Reset</a>
+</audio>
+</div>
+
+<div class="slide-window">
+<div class="slider-menu">
+
+<div class="profile">
+<div class="pimage">
+<img src="../res/others/profile.jpg" height="100px" width="100px">
+</div>
+<div class="pp">
+<div class="pname">James Walker</div>
+<div class="pinfo">Welcome to the shop!</div>
+</div>
+</div>
+<div class="status">
+<div class="lstatus">
+<div class="ln">7</div>
+<div class="ld">
+Shipped<br>Instruments
+</div>
+</div>
+<div class="cstatus">
+<div class="cn">1</div>
+<div class="cd">
+Pending
+</div>
+</div>
+<div class="nstatus">
+<div class="nn">11</div>
+<div class="nd">
+Wish List<br>Instruments
+</div>
+</div>
+</div>
+<div class="squote">
+<div class="d3d">Quote for the moment:</div><br>
+<div class="sqq">“If I were not a physicist, I would probably be a musician. I often think in music. I live my daydreams in music. I see my life in terms of music.”<br><br><i><font color="grey">~Albert Einstein</font></i></div>
+</div>
+<div class="menu-options">
+<ol>
+<li><a href="../main/home.html">HOME</a></li>
+<li><a href="../main/login.html">LOGIN</a></li>
+<li><a href="#">PRODUCTS</a></li>
+<li><a href="#">ABOUT US</a></li>
+<li><a href="#">LANDING PAGE</a></li>
+<li><a href="#">CONTACT US</a></li>
+</ol>
+</div>
+</div>
+<div></div>
+</div>
+<div id="h-pop-up">
+<img src="../res/icons/like.svg" id="pop-img">
+
+</div>
+</body>
+</html>
